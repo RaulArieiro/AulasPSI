@@ -10,15 +10,15 @@ namespace TiposVarios
             int i = 777232;
 
             float f = 666f;
-            double do = 9.99;
+            double dou = 9.99;
 
-            
+
 
             Console.WriteLine(u);
             Console.WriteLine(i);
             Console.WriteLine(f);
-            Console.WriteLine(do);
-            Console.WriteLine()
+            Console.WriteLine(dou);
+            Console.WriteLine();
         }
     }
 }
