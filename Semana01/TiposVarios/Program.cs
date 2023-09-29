@@ -15,12 +15,16 @@ namespace TiposVarios
             char Letra = 'J';
 
             bool v = u>i;
+
+            char Grek = '\u03A9';
+
             Console.WriteLine(u);
             Console.WriteLine(i);
             Console.WriteLine(f);
             Console.WriteLine(dou);
             Console.WriteLine(Letra);
             if(!v)Console.WriteLine(v);
+            Console.WriteLine(Grek);
        }
     }
 }
