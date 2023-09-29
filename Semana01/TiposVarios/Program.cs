@@ -14,12 +14,13 @@ namespace TiposVarios
 
             char Letra = 'J';
 
-            
+            bool v = u>i;
             Console.WriteLine(u);
             Console.WriteLine(i);
             Console.WriteLine(f);
             Console.WriteLine(dou);
             Console.WriteLine(Letra);
-        }
+            if(!v)Console.WriteLine(v);
+       }
     }
 }
