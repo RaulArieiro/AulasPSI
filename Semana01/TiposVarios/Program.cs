@@ -12,13 +12,14 @@ namespace TiposVarios
             float f = 666f;
             double dou = 9.99;
 
+            char Letra = 'J';
 
-
+            
             Console.WriteLine(u);
             Console.WriteLine(i);
             Console.WriteLine(f);
             Console.WriteLine(dou);
-            Console.WriteLine();
+            Console.WriteLine(Letra);
         }
     }
 }
