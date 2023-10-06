@@ -6,13 +6,16 @@ namespace VariasStrings
     {
         static void Main(string[] args)
         {
-            string ju = "Judeus nao morreram";
+            string ju = "Judeus amam churraco";
             Console.WriteLine(ju);
-            string jut = "\t Judeus amam o gas";
+            string jut = "\t Judeus amam churracosssss";
             Console.WriteLine(jut);
-            string jub = "\t Hitler\\Kills -1\\Acistencias 100M\\Death 1 \\\u5350";
+            string jub = "\t Hitler \\Kills -1\\Assistencias 100M \\Death 1 \\\u5350";
             Console.WriteLine(jub);
-            string judeu;
+            int x;
+            int y;
+            string s = $"{x = 999} mais {y =6} é igual a {x + y}";
+            Console.WriteLine(s);
         }
     }
 }
