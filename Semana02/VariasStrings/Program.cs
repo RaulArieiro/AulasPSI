@@ -16,6 +16,9 @@ namespace VariasStrings
             int y;
             string s = $"{x = 999} mais {y =6} é igual a {x + y}";
             Console.WriteLine(s);
+            double dd = 0.12345;  
+            int ii = 18;
+            
         }
     }
 }
