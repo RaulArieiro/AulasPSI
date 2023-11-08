@@ -26,6 +26,8 @@ namespace Chronos
             cron1.Stop();
             cron2.Stop();
 
+            //StringBuilder - 6 Construtores.
+
         }
     }
 }
