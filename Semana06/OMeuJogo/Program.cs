@@ -24,12 +24,21 @@ namespace OMeuJogo
             }
 
             for(int i = 0; i<npc; i++){
-                Console.WriteLine($"{ini[i].GetNome()}");
+                Console.WriteLine($"O nome do inimigo é {ini[i].GetNome()}");
             }
-            /*Console.WriteLine($"Nome do inimigo: {soldado.GetNome()}");
-            Console.WriteLine($"Vida do inimigo: {soldado.GetVida()}");
-            soldado.Danificar(70);
-            Console.WriteLine($"Vida do inimigo danificado: {soldado.GetVida()}");*/
+                for(int i = 0; i<npc; i++){
+                int dano ;
+            
+                Console.Write("Escolha o valor de dano ");
+                dano = Convert.ToInt32(Console.ReadLine());
+                ini[i].Danificar(dano); 
+                Console.WriteLine($"O dano é {dano}");
+            }
+             for(int i = 0; i<npc; i++){
+                Console.WriteLine($"{ini[i].GetNome()}");
+                Console.WriteLine($"A vida do inimigo é {ini[i].GetVida()}");
+                Console.WriteLine($"O escudo do inimigo é {ini[i].GetEscudo()}");
+            }
         }
     }
 }
