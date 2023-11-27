@@ -30,13 +30,13 @@ namespace OMeuJogo
                 escudo = 0;
                 vida += add;
             }
-            if(vida < 0) vida = 0;
+            if(vida < 0) {
+                vida = 0;
+            }
         }
         
         public int GetVida(){
-            if(vida<= vida/2){
-               vida = 50;
-            }
+            
 	        return vida;
         }
         public void SetNome(string name){
