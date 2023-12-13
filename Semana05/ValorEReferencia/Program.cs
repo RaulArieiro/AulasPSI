@@ -28,5 +28,14 @@ namespace ValorEReferencia
                 Console.WriteLine($"{mr[p]}");
             }
         }
+
+        static void Conta(int[] mr  ){
+
+
+
+
+
+
+        }
     }
 }

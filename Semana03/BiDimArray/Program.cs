@@ -6,6 +6,8 @@ namespace BiDimArray
     {
         static void Main(string[] args)
         {
+            
+
             int hor;
             int ver;
             float[,] matriz;
