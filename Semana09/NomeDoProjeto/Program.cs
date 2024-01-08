@@ -8,8 +8,6 @@ namespace NomeDoProjeto
     {
         static void Main(string[] args)
         {
-            try
-            {
 
             string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string filePath = Path.Combine(desktop, "File.txt");
@@ -18,7 +16,7 @@ namespace NomeDoProjeto
             string guarda;
 
            Console.WriteLine("Escreve");
-
+        
         do{
             guarda = Console.ReadLine();   
             sr[indice] = guarda;
@@ -26,10 +24,9 @@ namespace NomeDoProjeto
             indice++;
         }while(guarda != "");
         File.WriteAllLines(filePath,sr);
-            } 
+        
 
-    
-    
+
         }
     }
        
