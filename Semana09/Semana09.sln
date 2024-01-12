@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escrever02", "Escrever02\Es
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteErros", "TesteErros\TesteErros.csproj", "{F58E1566-416E-40B9-8826-740BA7C9C6B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ler01", "Ler01\Ler01.csproj", "{B8D4787B-6457-4C7C-9FDF-7787DAAD0647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{F58E1566-416E-40B9-8826-740BA7C9C6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F58E1566-416E-40B9-8826-740BA7C9C6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F58E1566-416E-40B9-8826-740BA7C9C6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D4787B-6457-4C7C-9FDF-7787DAAD0647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D4787B-6457-4C7C-9FDF-7787DAAD0647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D4787B-6457-4C7C-9FDF-7787DAAD0647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D4787B-6457-4C7C-9FDF-7787DAAD0647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
