@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.IO.Compression;
 
@@ -41,12 +43,18 @@ sw.Close();
 
         }
         static void Descomprime(){
-            
-            FileStream aceder = new FileStream("ficheiro.txt.gz", FileMode.Open, FileAccess.Read);
+            string line;
             FileStream aceder = new FileStream("ficheiro.txt.gz", FileMode.Open, FileAccess.Read);
             GZipStream des = new GZipStream(aceder, CompressionMode.Decompress);
-            StreamWriter le = new StreamWriter();
+            StreamReader re = new StreamReader(des);
+            StreamWriter le = new StreamWriter("ficheiro.txt");
 
+            while((line = re.ReadLine()) != null){
+                Console.WriteLine(line);
+                le.WriteLine(line); 
+            } 
+            re.Close();
+            le.Close();
         }
     }
 }
