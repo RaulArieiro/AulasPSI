@@ -12,7 +12,7 @@ namespace Descompressor
         static void Main(string[] args)
         {
             string escreve;
-            Console.WriteLine("Qureres comprimir ou descomprimir");
+            Console.WriteLine("Queres comprimir ou descomprimir");
             escreve = Console.ReadLine();
             if(escreve == "Comprimir " || escreve == "comprimir" ){
                 Comprime();
