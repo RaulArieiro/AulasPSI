@@ -25,10 +25,6 @@ namespace EscreverTexto
             fte.WriteLine(n);
             fte.WriteLine(real);
             
-
-
-
-
 fte.Close();
 
         }
