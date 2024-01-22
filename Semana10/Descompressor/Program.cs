@@ -27,34 +27,32 @@ namespace Descompressor
         static void Comprime(){
             string line;
 
-                    FileStream fs = new FileStream("ficheiro.txt.gz", FileMode.Create, FileAccess.Write);
+                    using (FileStream fs = new FileStream("ficheiro.txt.gz", FileMode.Create, FileAccess.Write)){
+                        using (GZipStream gzs = new GZipStream(fs, CompressionLevel.Optimal)){
+                        
+                        using (StreamWriter sw = new StreamWriter(gzs)){
+                        while ((line = Console.ReadLine()).Length > 0)
+                                {
+                                sw.WriteLine(line);
 
-                    GZipStream gzs = new GZipStream(fs, CompressionLevel.Optimal);
-
-                    StreamWriter sw = new StreamWriter(gzs);
-
-while ((line = Console.ReadLine()).Length > 0)
-{
-    sw.WriteLine(line);
-}
-
-sw.Close();
-
-
+                                }
+                            }
+                        }
+                    }
         }
         static void Descomprime(){
             string line;
-            FileStream aceder = new FileStream("ficheiro.txt.gz", FileMode.Open, FileAccess.Read);
-            GZipStream des = new GZipStream(aceder, CompressionMode.Decompress);
-            StreamReader re = new StreamReader(des);
-            StreamWriter le = new StreamWriter("ficheiro.txt");
-
-            while((line = re.ReadLine()) != null){
-                Console.WriteLine(line);
-                le.WriteLine(line); 
-            } 
-            re.Close();
-            le.Close();
+            using (FileStream aceder = new FileStream("ficheiro.txt.gz", FileMode.Open, FileAccess.Read)){
+             using (GZipStream des = new GZipStream(aceder, CompressionMode.Decompress)){
+                using (StreamReader re = new StreamReader(des))
+                using (StreamWriter le = new StreamWriter("ficheiro.txt")){
+                    while((line = re.ReadLine()) != null){
+                        Console.WriteLine(line);
+                        le.WriteLine(line); 
+                 }   
+              }
+            }            
+          }             
         }
     }
 }

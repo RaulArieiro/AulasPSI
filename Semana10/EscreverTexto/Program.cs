@@ -11,7 +11,6 @@ namespace EscreverTexto
     {
         static void Main(string[] args)
         {
-            string line;
             string li;
             double real;
             int n;
