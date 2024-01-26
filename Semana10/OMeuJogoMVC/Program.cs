@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace OMeuJogo
+namespace OMeuJogoMVC
 {
     class Program
     {
         static void Main(string[] args)
         {
-          Inimigo[] er;
+          Inimigo[] er = new Inimigo[0];
 
         // Criar o controlador, passando uma referência aos elementos do modelo
           InimigoController controller = new InimigoController(er);

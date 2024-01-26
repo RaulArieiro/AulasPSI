@@ -1,6 +1,6 @@
 using System;
 
-namespace OMeuJogo
+namespace OMeuJogoMVC
 
 {
    public class Inimigo

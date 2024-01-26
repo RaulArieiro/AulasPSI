@@ -1,4 +1,4 @@
-namespace OMeuJogo
+namespace OMeuJogoMVC
 {
     public enum Abastecimento
     {
